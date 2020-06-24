@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<form method="POST" action="/calculate2">
+    <input type="text" name="num">
+    <input type="text" name="num2">
+    <button type="submit" name="plus">덧셈 연산</button>
+    <button type="submit" name="minus">뺄셈 연산</button>
+    <button type="submit" name="mul">곱셈 연산</button>
+    <button type="submit" name="div">나누셈 연산</button> <br>
+</form>
+<textarea cols="100" rows="8" style="resize: none;">
+        {% if num == None %}
+            {% if num2 == None %}
+            {% else %}
+            {% endif %}
+        {% else %}
+            {% if cal == '+' %}
+                {{num3}}
+            {% elif cal == '-' %}
+                {{num3}}
+            {% elif cal == '*' %}
+                {{num3}}
+            {% elif cal == '/' %}
+                {{num3}}
+            {% else %}
+                <h5> 연산 오류 </h5>
+            {% endif %}
+        {% endif %}
+</textarea>
